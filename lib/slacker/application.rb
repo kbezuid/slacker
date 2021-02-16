@@ -144,7 +144,7 @@ EOF
       drv = ODBC::Driver.new
       drv.name = 'Driver1'
       drv.attrs.tap do |a|
-        a['Driver'] = '{SQL Server}'
+        a['Driver'] = '{ODBC Driver 17 for SQL Server}'
         a['Server']= @configuration.db_server
         a['Database']= @configuration.db_name
         a['Uid'] = @configuration.db_user
